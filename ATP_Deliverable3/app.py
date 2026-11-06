@@ -8,7 +8,8 @@ st.caption("Audience: tennis players, coaches, fans, and sports analysts. Data: 
 
 @st.cache_data
 def load_data():
-    data = pd.read_csv("dashboard_data.csv")
+    from pathlib import Path
+data = pd.read_csv(Path(__file__).resolve().parent / "dashboard_data.csv")
     data["tourney_date"] = pd.to_datetime(data["tourney_date"], errors="coerce")
     return data
 
