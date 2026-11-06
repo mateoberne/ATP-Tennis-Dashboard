@@ -1,29 +1,31 @@
-# ATP 2025 Tennis Match Analysis Dashboard
+# ATP 2025 Tennis Match Analysis
 
-## Project
-This Streamlit dashboard continues my Deliverable 2 Python analysis of ATP tennis match results. It examines how match results differ across court surfaces, whether higher-ranked players usually win, and how first-serve performance compares between match winners and losers.
+## Project Description
+This project analyzes ATP tennis match results from the 2025 season using Python, Pandas, and Streamlit. The dashboard allows users to explore match results, court surfaces, ATP rankings, and serving statistics.
 
-## Dataset and source
-ATP 2025 match results from the [tennis-sackmann archive](https://github.com/Aneeshers/tennis-sackmann-archive/blob/main/atp/atp_matches_2025.csv). The included `dashboard_data.csv` is the cleaned, reduced CSV exported from my Deliverable 2 notebook. The source includes matches with tournament start dates in late 2024. Missing rankings and serve statistics were left missing, not estimated. Check the original dataset's license and attribution requirements before redistribution.
+## Dataset and Source
+The dataset comes from the tennis-sackmann ATP match archive.
 
-## Intended audience
-Tennis players, coaches, fans, and sports analysts.
+Source: https://github.com/Aneeshers/tennis-sackmann-archive
 
-## Analysis questions
-1. How do match results differ across court surfaces?
+The cleaned dataset contains 2,944 matches and was prepared during Deliverable 2 using Google Colab and Pandas.
+
+## Intended Audience
+This dashboard is designed for tennis players, coaches, fans, and sports analysts interested in understanding ATP match results and player performance.
+
+## Research Questions
+1. How do ATP match results vary across different court surfaces?
 2. How often does the higher-ranked player win?
-3. How are serving statistics related to winning?
+3. How are serving statistics related to winning tennis matches?
 
-## Dashboard features
-- Three charts: matches by surface, higher-ranked player win rate by surface, and first-serve points won for winners versus losers.
-- Three summary metrics: number of matches, higher-ranked player win rate, and winners' average first-serve points won.
-- Two interactive controls: court surface and tournament. Both update the charts and metrics.
+## Dashboard Features
+- Three interactive charts showing court surfaces, rankings, and serving performance.
+- Three summary metrics showing total matches, higher-ranked player win rate, and average aces.
+- Filters for court surface, tournament, and player.
+- Match results table and player statistics.
 
-## Run locally
-Install dependencies with `pip install -r requirements.txt`, then run `streamlit run app.py`.
+## Published Streamlit Application
+https://atp-tennis-dashboard-8yhy8jdbusqydmwsc6zrgu.streamlit.app/
 
-## Published app
-**App URL:** ADD_YOUR_PUBLISHED_STREAMLIT_URL_HERE
-
-## AI-use statement
-I used ChatGPT to help write and organize the Streamlit code, interactive filters, and README. I am responsible for checking the results, testing the dashboard, and explaining the findings.
+## Generative AI Use
+ChatGPT was used to assist with Python coding, debugging, and Streamlit dashboard development. The project uses the dataset and research questions from Deliverable 2.
